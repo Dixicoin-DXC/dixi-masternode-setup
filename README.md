@@ -8,7 +8,7 @@ If you follow the steps and use a newly installed Ubuntu 16.04 VPS, it will auto
 
 Steps:
 
-**0) Create a new VPS** or use existing one. Recommended VPS resource configuration is similar to the vultr's $5/mo (25GB SSD/1xCPU/1GB RAM, Ubuntu 16.04). https://www.vultr.com/?ref=7388052 It can handle several MNs running simultaneously on the same public IP address but they have to use different ports. Therefore you cannot easily run more than one dixicoin MN on the same box. Different coins are fine.
+**0) Create a new VPS** or use existing one. Recommended VPS resource configuration is similar to the vultr's $5/mo (25GB SSD/1xCPU/1GB RAM, Ubuntu 16.04). https://www.vultr.com/?ref=7456916 It can handle several MNs running simultaneously on the same public IP address but they have to use different ports. Therefore you cannot easily run more than one dixicoin MN on the same box. Different coins are fine.
 
 **1)** In Windows wallet, **create a new receiving address** and name it **mn1** for example. 
 
