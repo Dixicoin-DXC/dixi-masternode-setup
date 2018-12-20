@@ -29,17 +29,17 @@ function delay { echo -e "${GREEN}Sleep for $1 seconds...${NC}"; sleep "$1"; }
 
 #Stop daemon if it's already running
 function stop_daemon {
-    if pgrep -x './dixicoind' > /dev/null; then
+    if pgrep -x 'dixicoind' > /dev/null; then
         echo -e "${YELLOW}Attempting to stop dixidd${NC}"
         ./dixicoin-cli stop
         delay 30
-        if pgrep -x './dixicoind' > /dev/null; then
-            echo -e "${RED}./dixicoind daemon is still running!${NC} \a"
+        if pgrep -x 'dixicoind' > /dev/null; then
+            echo -e "${RED}dixicoind daemon is still running!${NC} \a"
             echo -e "${YELLOW}Attempting to kill...${NC}"
-            pkill ./dixicoind
+            pkill dixicoind
             delay 30
-            if pgrep -x './dixicoind' > /dev/null; then
-                echo -e "${RED}Can't stop ./dixicoind! Reboot and try again...${NC} \a"
+            if pgrep -x 'dixicoind' > /dev/null; then
+                echo -e "${RED}Can't stop dixicoind! Reboot and try again...${NC} \a"
                 exit 2
             fi
         fi
@@ -100,7 +100,7 @@ echo -e "${YELLOW}"
 sudo ufw --force enable
 echo -e "${NC}"
 
-#Generating Random Password for ./dixicoind JSON RPC
+#Generating Random Password for dixicoind JSON RPC
 rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 #Create 2GB swap file
@@ -157,7 +157,7 @@ EOF
     sudo chmod 755 -R ~/.dixicoin/dixi.conf
 
     #Starting daemon first time just to generate masternode private key
-    ././dixicoind -daemon
+    ./dixicoind -daemon
     delay 30
 
     #Generate masternode private key
@@ -190,11 +190,11 @@ masternodeprivkey=$genkey
 EOF
 
 #Finally, starting dixi daemon with new dixi.conf
-./dixicoind
+dixicoind
 delay 5
 
-#Setting auto star cron job for ./dixicoind
-cronjob="@reboot sleep 30 && ./dixicoind"
+#Setting auto star cron job for dixicoind
+cronjob="@reboot sleep 30 && dixicoind"
 crontab -l > tempcron
 if ! grep -q "$cronjob" tempcron; then
     echo -e "${GREEN}Configuring crontab job...${NC}"
@@ -282,13 +282,13 @@ echo -e "${NC}-------------------------------------------------
 
 NOTE: To edit dixi.conf, first stop the dixid daemon,
 then edit the dixi.conf file and save it in nano: (Ctrl-X + Y + Enter),
-then start the ./dixicoind daemon back up:
+then start the dixicoind daemon back up:
 
 to stop:   ${YELLOW}eden-cli stop${NC}
 to edit:   ${YELLOW}nano ~/.dixicoin/dixi.conf${NC}
 to start:  ${YELLOW}edend${NC}
 ========================================================================
-To view ./dixicoind debug log showing all MN network activity in realtime:
+To view dixicoind debug log showing all MN network activity in realtime:
 
 ${YELLOW}tail -f ~/.dixicoin/debug.log${NC}
 ========================================================================
