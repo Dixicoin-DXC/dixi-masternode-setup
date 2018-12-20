@@ -54,7 +54,7 @@ the collateral for this masternode is secured in your wallet. Without this step 
 
 Basically all you need to do is just edit the __masternode.conf__ text file located in your hot wallet __data directory__ to enter a few masternode parameters, restart the wallet and then issue a start command for this new masternode.
 
-There are two ways to edit __masternode.conf__. The easiest way is to open the file from within the wallet app (Tools -> Open Masternode Configuration File). Optionally, you can open it from the wallet data folder directly by navigating to the %appdata%/roaming/dixicore. Just hit Win+R, paste %appdata%/roaming/dixicore, hit Enter and then open **masternode.conf** with Notepad for editing. 
+There are two ways to edit __masternode.conf__. The easiest way is to open the file from within the wallet app (Tools -> Open Masternode Configuration File). Optionally, you can open it from the wallet data folder directly by navigating to the %appdata%/roaming/dixicoin. Just hit Win+R, paste %appdata%/roaming/dixicoin, hit Enter and then open **masternode.conf** with Notepad for editing. 
 
 It does not matter which way you open the file or how you edit it. In either case you will need to restart your wallet when you are done in order for it to pickup the changes you made in the file. Make sure to save it before you restart your wallet.
 
@@ -133,16 +133,16 @@ dixid-cli mnsync status
 If you are really bored waiting for the sync to complete, you can watch what your masternode is doing on the network at any time by using tail to **monitor the debug.log** file in realtime:
 
 ```bash
-sudo tail -f ~/.dixicore/debug.log
+sudo tail -f ~/.dixicoin/debug.log
 ```
 
 And for those who wonder what does **dixi.conf** file looks like for a typical masternode which the setup script generates, here's an example below...
 
-Note that both, the __externalip__ should match the IP address and __masternodeprivkey__ should math the private key in your  __masternode.conf__ of your hot wallet in order for the masternode to function properly. If any of these two parameters change, they must be changed in both, the dixi.conf file on the masternode VPS (located in /root/.dixicore directory) and masternode.conf on Hot Wallet PC (located in %appdata%/dixicore folder).
+Note that both, the __externalip__ should match the IP address and __masternodeprivkey__ should math the private key in your  __masternode.conf__ of your hot wallet in order for the masternode to function properly. If any of these two parameters change, they must be changed in both, the dixi.conf file on the masternode VPS (located in /root/.dixicoin directory) and masternode.conf on Hot Wallet PC (located in %appdata%/dixicoin folder).
 
 Example: 
 
-**nano /root/.dixicore/dixi.conf**
+**nano /root/.dixicoin/dixi.conf**
 
 ```bash
 rpcuser=dixirpc
@@ -198,7 +198,7 @@ Currently dixicoin nodes will display most (if not all) peers with IPv6 addresse
 Sample output of the script from node 45.76.12.139 on Apr-26th 2018:
 ```
 ===========================================================================
-Outbound connections to other dixicoin nodes [dixicoin datadir: /root/.dixicore]
+Outbound connections to other dixicoin nodes [dixicoin datadir: /root/.dixicoin]
 ===========================================================================
 Node IP               Ping    Rx/Tx     Since  Hdrs   Height  Time   Ban
 Address               (ms)   (KBytes)   Block  Syncd  Blocks  (min)  Score
@@ -221,7 +221,7 @@ Address               (ms)   (KBytes)   Block  Syncd  Blocks  (min)  Score
  22:14:21 up 3 days, 22:59,  3 users,  load average: 0.01, 0.03, 0.00
 ===========================================================================
 Masternode Status:
-# dixicoin-cli -datadir=/root/.dixicore masternode status
+# dixicoin-cli -datadir=/root/.dixicoin masternode status
 {
   "vin": "CTxIn(COutPoint(0a5afa9e8c41d003c4399f089bc54880e05ce8a051d30932d236ba12b5d1040b, 0), scriptSig=)",
   "service": "45.76.12.139:19988",
@@ -230,7 +230,7 @@ Masternode Status:
 }
 ===========================================================================
 Sync Status:
-# dixicoin-cli -datadir=/root/.dixicore mnsync status
+# dixicoin-cli -datadir=/root/.dixicoin mnsync status
 {
   "AssetID": 999,
   "AssetName": "MASTERNODE_SYNC_FINISHED",
@@ -243,7 +243,7 @@ Sync Status:
 }
 ===========================================================================
 Masternode Information:
-# dixicoind-cli -datadir=/root/.dixicore getinfo
+# dixicoind-cli -datadir=/root/.dixicoin getinfo
 {
   "version": 2000001,
   "protocolversion": 70206,
@@ -264,7 +264,7 @@ Masternode Information:
 }
 ===========================================================================
 Usage: nodemon.sh [refresh delay] [datadir index]
-Example: nodemon.sh 10 22 will run every 10 seconds and query dixid in /root/.dixicore22
+Example: nodemon.sh 10 22 will run every 10 seconds and query dixid in /root/.dixicoin22
 
 
 Press Ctrl-C to Exit...
