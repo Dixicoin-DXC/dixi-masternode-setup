@@ -154,7 +154,7 @@ rpcuser=dixirpc
 rpcpassword=$rpcpassword
 EOF
 
-    sudo chmod 755 -R ~/.dixicoin/dixicoin.conf
+    sudo chmod 755 -R ~/.dixicoin/dixi.conf
 
     #Starting daemon first time just to generate masternode private key
     dixicoind -daemon
@@ -271,7 +271,7 @@ ${GREEN}...scroll up to see previous screens...${NC}
 Here are some useful commands and tools for masternode troubleshooting:
 
 ========================================================================
-To view masternode configuration produced by this script in dixicoin.conf:
+To view masternode configuration produced by this script in dixi.conf:
 
 ${YELLOW}cat ~/.dixicoin/dixi.conf${NC}
 
