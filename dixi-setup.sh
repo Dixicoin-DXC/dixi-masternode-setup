@@ -133,7 +133,7 @@ stop_daemon
 
 # Deploy binaries to /usr/bin
 sudo cp dixi-masternode-setup/dxc-v4.1.1/* /usr/bin/
-sudo chmod 755 -R ~/dxc-masternode-setup
+sudo chmod 755 -R ~/dixicoin-masternode-setup
 sudo chmod 755 /usr/bin/dixicoin*
 
 # Deploy masternode monitoring script
