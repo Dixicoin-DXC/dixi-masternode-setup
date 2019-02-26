@@ -36,15 +36,24 @@ Check that your vps is running and syncing: dixicoin-cli getinfo (Blocks should 
 Other useful commands of operation:
 
 systemctl start dixicoin.service
+
 systemctl stop dixicoin.service
+
 systemctl status dixicoin.service
+
 systemctl enable dixicoin.service
+
 systemctl disable dixicoin.service
 
+
 dixicoind (manual start daemon without service)
+
 dixicoin-cli getinfo
+
 dixicoin-cli mnsync status
+
 dixicoin-cli masternode status
+
 dixicoin-cli stop (manual daemon stop without the service)
 
 ****************
