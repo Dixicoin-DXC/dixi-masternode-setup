@@ -1,8 +1,8 @@
 ****************
-Dixicoin Masternode Script
+# Dixicoin Masternode Script
 ****************
 
-Compiled for Ubuntu 16.0.4
+** Compiled for Ubuntu 16.0.4** 
 
 - Intended for New Install with Install Script or quick update to version 4.5.0
 - Install Script will install basic dependencies and pre-compiled version of Dixicoin v4.5.0
