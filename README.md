@@ -2,7 +2,7 @@
 # Dixicoin Masternode Script
 ****************
 
-** Compiled for Ubuntu 16.0.4** 
+**Compiled for Ubuntu 16.0.4** 
 
 - Intended for New Install with Install Script or quick update to version 4.5.0
 - Install Script will install basic dependencies and pre-compiled version of Dixicoin v4.5.0
@@ -10,7 +10,7 @@
 - If your version does not upgrade please remove your old.
 
 ****************
-Instructions:
+**Instructions:** 
 
 Step 1. wget url-to-dixicoin_install.sh (Located on the Dixicoin GitHub)
 
@@ -22,7 +22,7 @@ Step 3. bash dixicoin_install.sh (runs the install script)
 ****************
 The install process can take some time and is determined by the updated condition of your vps. Please wait if the process appears to have ceased or "hang". 
 
-Patience is the key at this point.
+**Patience is the key at this point.**
 
 When the Installation is near completion you will be asked to paste in a Masternode Private Key.
 
@@ -33,7 +33,7 @@ After pasting in your generated key you will be prompted with some basic informa
 Check that your vps is running and syncing: dixicoin-cli getinfo (Blocks should be increasing)
 
 ****************
-Other useful commands of operation:
+**Other useful commands of operation:**
 
 systemctl start dixicoin.service
 
@@ -57,7 +57,7 @@ dixicoin-cli masternode status
 dixicoin-cli stop (manual daemon stop without the service)
 
 ****************
-Basic needs from the PC wallet
+**Basic needs from the PC wallet**
 
 1. Private key - Command: masternode genkey
 
