@@ -21,6 +21,7 @@ Step 3. bash dixicoin_install.sh (runs the install script)
 
 ****************
 **The install Process**
+****************
 
 The install process can take some time and is determined by the updated condition of your vps. Please wait if the process appears to have ceased or "hang". 
 
