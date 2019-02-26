@@ -13,8 +13,11 @@ Compiled for Ubuntu 16.0.4
 Instructions:
 
 Step 1. wget url-to-dixicoin_install.sh (Located on the Dixicoin GitHub)
+
 Step 2. chmod +x dixicoin_install.sh (changes permissions so the script may be executed)
+
 Step 3. bash dixicoin_install.sh (runs the install script)
+
 
 ****************
 The install process can take some time and is determined by the updated condition of your vps. Please wait if the process appears to have ceased or "hang". 
