@@ -11,6 +11,7 @@ Compiled for Ubuntu 16.0.4
 
 ****************
 Instructions:
+
 Step 1. wget url-to-dixicoin_install.sh (Located on the Dixicoin GitHub)
 Step 2. chmod +x dixicoin_install.sh (changes permissions so the script may be executed)
 Step 3. bash dixicoin_install.sh (runs the install script)
