@@ -1,5 +1,5 @@
 ****************
-##Dixicoin Masternode Script
+Dixicoin Masternode Script
 ****************
 
 Compiled for Ubuntu 16.0.4
