@@ -21,11 +21,10 @@ Step 3. bash dixicoin_install.sh (runs the install script)
 
 ****************
 **The install Process**
-****************
 
 The install process can take some time and is determined by the updated condition of your vps. Please wait if the process appears to have ceased or "hang". 
 
-**Patience is the key at this point.**
+Patience is the key at this point.
 
 When the Installation is near completion you will be asked to paste in a Masternode Private Key.
 
