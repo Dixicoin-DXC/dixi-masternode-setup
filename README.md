@@ -12,7 +12,7 @@
 ****************
 **Instructions:** 
 
-Step 1. wget url-to-dixicoin_install.sh (Located on the Dixicoin GitHub)
+Step 1. wget https://github.com/Dixicoin-DXC/dixi-masternode-setup/blob/master/dixicoin_install.sh
 
 Step 2. chmod +x dixicoin_install.sh (changes permissions so the script may be executed)
 
