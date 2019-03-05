@@ -14,7 +14,7 @@
 
 Step 1. wget https://github.com/Dixicoin-DXC/dixi-masternode-setup/blob/master/dixcoin451_install.sh
 
-Step 2. chmod +x dixcoin451_install.sh (changes permissions so the script may be executed)
+Step 2. chmod +x dixicoin451_install.sh (changes permissions so the script may be executed)
 
 Step 3. bash dixcoin451_install.sh (runs the install script)
 
