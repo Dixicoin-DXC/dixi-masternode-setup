@@ -4,19 +4,19 @@
 
 **Compiled for Ubuntu 16.0.4** 
 
-- Intended for New Install with Install Script or quick update to version 4.5.0
-- Install Script will install basic dependencies and pre-compiled version of Dixicoin v4.5.0
+- Intended for New Install with Install Script or quick update to version 4.5.1
+- Install Script will install basic dependencies and pre-compiled version of Dixicoin v4.5.1
 - Older versions "should" be replaced in this process and also updated to current version.
 - If your version does not upgrade please remove your old.
 
 ****************
 **Instructions:** 
 
-Step 1. wget https://github.com/Dixicoin-DXC/dixi-masternode-setup/blob/master/dixicoin_install.sh
+Step 1. wget https://github.com/Dixicoin-DXC/dixi-masternode-setup/blob/master/dixcoin451_install.sh
 
-Step 2. chmod +x dixicoin_install.sh (changes permissions so the script may be executed)
+Step 2. chmod +x dixcoin451_install.sh (changes permissions so the script may be executed)
 
-Step 3. bash dixicoin_install.sh (runs the install script)
+Step 3. bash dixcoin451_install.sh (runs the install script)
 
 
 ****************
